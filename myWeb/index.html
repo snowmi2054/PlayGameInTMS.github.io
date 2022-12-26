@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>我的練等日記</title>  
+  </head>
+
+  <body  background="A2.jpg" style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+	  <div class="container-fluid">
+        <a class="navbar-brand" href="#">我的練等日記</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">基礎職業</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="01.html">末日反抗軍</a>
+                <a class="dropdown-item" href="02.html">冒險家</a>
+				<a class="dropdown-item" href="03.html">英雄團</a>
+				<a class="dropdown-item" href="04.html">皇家騎士團</a>
+              </div>
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">海外職業</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="05.html">曉之陣</a>
+                <a class="dropdown-item" href="06.html">超新星</a>
+				<a class="dropdown-item" href="07.html">雷普族</a>
+				<a class="dropdown-item" href="08.html">阿尼瑪</a>
+				
+            </li>
+          </ul>
+		  <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="輸入職業">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>  
+        </div>		
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+	    <h1 class="text-center mt-5">我的練等日記</h1>
+		
+	    <!-- 第一個景點 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2><small></small></h2>
+            <p class="lead">對於像我一樣，喜歡爆肝玩RPG角色扮演遊戲，
+                     或是單純喜歡打怪練等攻略高難度BOSS的人，練等就成了我玩新楓之谷的首要目標，
+                     但在練等期間，有許多原因會導致練等速度下降，
+                     卻又無法捨棄想要變強的心，只能硬著頭皮打好幾下把怪打死？
+
+                    這時，肝王之王豹破達人出現了！！！
+                    他會教你很多小撇步讓你輕鬆了解那些職業的優劣，及練等優先順序，讓你練等不再慢吞吞。</p>
+		    <p>在新楓之谷之中，末日反抗軍被認為是最近幾年最下水道的職業群，不管在哪一個等級區間，統計人數都排在全職業倒數。出了這麼多年以來，強度始終被人唾棄鄙視。但是在這種環境下，我相信末日反抗軍會撐起新楓之谷的一片天。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="ClassArtwork_Resistance.webp" class="img-fluid">
+          </div>
+        </div>	
+		<div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="Wild_Hunter_bg.webp">
+            <div class="card-body">
+              <h5 class="card-title">末日反抗軍－狂豹獵人</h5>
+              <p class="card-text">小看狂豹獵人的人，將面臨狂豹與獵人的雙重打擊，必定死無葬身之地。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="Battle_Mage_bg.webp">
+            <div class="card-body">
+              <h5 class="card-title">末日反抗軍－煉獄巫師</h5>
+              <p class="card-text">操控死神之力的進戰法師，任何踩入故土的敵軍，必先承受黑暗世紀之苦。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+		
+      
+	  </div>
+	</main>
+	<!-- 觸發互動視窗的按鈕 -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+      data-bs-target="#myModal1">爆拳槍神</button>
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+      data-bs-target="#myModal2">機甲戰神</button>
+	  <script>
+       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+       return new bootstrap.Tooltip(tooltipTriggerEl)
+       });
+      </script>
+      <!-- 互動視窗 -->
+      <div class="modal fade" id="myModal1" tabindex="-1">
+       <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+          <h3 class="modal-title">爆拳槍神</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+          <img src="bow01.jpg" width="50%" class="img-fluid">
+          <p class="h3 text-end">美麗角色</p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" 
+            data-bs-placement="top" title="爆拳槍神">技能展示</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- 互動視窗 -->
+      <div class="modal fade" id="myModal2" tabindex="-1">
+       <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+          <h3 class="modal-title">機甲戰神</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+          <img src="bow03.jpg" width="50%" class="img-fluid">
+          <p class="h3 text-end">帥氣角色</p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-container="body"  
+           data-bs-toggle="popover" data-bs-placement="top" data-bs-content="機甲戰神">技能展示</button>
+		   <script> 
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+           });
+
+           </script>
+         </div>
+        </div>
+       </div>
+      </div>
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 新楓之谷 Wiki&middot;<a href="https://www.standupbbq.com/pages/%E9%9A%B1%E7%A7%81%E6%AC%8A%E8%AA%AA%E6%98%8E?utm_source=google&utm_medium=shopline-cpc&utm_campaign=DSA&gclid=EAIaIQobChMIla_BnNSW_AIV07WWCh1Vag1vEAAYAyAAEgLhuPD_BwE">隱私權政策</a>&middot;
+		<a href="https://www.gov.tw/cp.aspx?n=17">服務條款</a></p>
+		<p class="text-end"><a href="index.html">Back</a></p>
+      </div>
+    </footer> 	
+  </body>
+</html>
